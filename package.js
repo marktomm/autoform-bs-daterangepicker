@@ -18,8 +18,7 @@ Package.onUse(function(api) {
 
   api.addFiles('lib/moment.js', 'client');
 
-  api.addFiles('lib/daterangepicker-bs3.css', 'client');
-  api.addFiles('lib/daterangepicker-bs2.css', 'client');
+  api.addFiles('lib/daterangepicker.css', 'client');
   api.addFiles('lib/daterangepicker.js', 'client');
 
   api.addFiles('autoform-bs-daterangepicker.html', 'client');
