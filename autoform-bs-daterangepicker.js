@@ -40,4 +40,5 @@ Template.afDateRangePicker.onRendered(function () {
   var data = this.data;
 
   $input.daterangepicker(data.atts.dateRangePickerOptions);
+  $input.val('');
 });
