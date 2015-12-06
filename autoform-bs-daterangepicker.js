@@ -9,6 +9,12 @@ AutoForm.addInputType('dateRange', {
     return val;
   },
   valueOut: function () {
+    
+    if(!this.context.oncancel) {
+      var self = this;
+      this.context.oncancel = function() {self.val('');};
+    }
+      
     if(! this.val()) {
       return {};
     }
