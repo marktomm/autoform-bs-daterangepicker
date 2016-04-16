@@ -21,6 +21,10 @@ AutoForm.addInputType('dateRange', {
 
     var range = this.data('daterangepicker');
 
+    if(!range) {
+      return {};
+    }
+
     return {
       startDate: range.startDate,
       endDate: range.endDate
